@@ -1,7 +1,17 @@
 #Bài tập 4: 
-#Viết chương trình Python cho phép nhập vào một số nguyên dương và in ra các số chia hết cho 3 từ 0 đến chính nó. 
-n = int(input("Nhập số nguyên dương: "))
-print("Các số chia hết cho 3 từ 0 đến", n, "là:")
-for i in range (0, n + 1 ):
-    if i % 3 == 0:
-        print(i)
+#Tạo 1 List có tên là ‘’numbers’’ trong Python và cho người dùng nhập vào 10 phần tử số nguyên sau đó hiển thị có bao nhiêu phần tử > 5
+
+numbers = []
+for i in range (10):
+        n = int(input(f"Nhập số nguyên thứ {i+1}: "))
+        numbers.append(n)
+# Hiện thị danh sách phần tử > 5
+dem = 0
+for x in numbers:
+    if x > 5:
+        dem += 1
+print("\nDanh Sách numbers:",numbers)
+# Hiện thị phần tử thử bao nhiêu trong chuổi
+print("Số phần tử >5 là: ",dem)
+
+    
